@@ -5,5 +5,5 @@
    
 </view>
 <view class="weui-btn-area share_button">
-    <button class="ecs_default_button" bindtap='share' form-type="submit">分享我的二维码</button>
+    <button class="ecs_default_button" open-type='share'>分享我的二维码</button>
   </view>

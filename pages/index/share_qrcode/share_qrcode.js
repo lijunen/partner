@@ -63,7 +63,9 @@ Page({
    * 用户点击右上角分享
    */
   onShareAppMessage: function (res) {
-    console.log(res)
+    return {
+      title:'益点合伙人分享多多赚钱多多！'
+    }
 
   },
   qrcode:function(){
@@ -86,14 +88,7 @@ Page({
       }
     })
    
-  },
-  share:function(){
-    wx.showModal({
-      title: '友情提示',
-      content: '点击右上角的转发进行分享',
-      showCancel:false
-    })
-    wx.showShareMenu()
   }
+  
 
 })
