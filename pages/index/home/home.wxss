@@ -1,0 +1,39 @@
+/* pages/index/main/main.wxss */
+.user_bg{
+  background: #0EA5FE;
+}
+
+
+.earnings_content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  margin: 0 40rpx;
+	background: rgba(255,255,255,0.7);
+	border-radius: 5px 5px 0 0;
+  padding: 20rpx;
+}
+.count_item{
+  text-align: center;
+}
+.count_item_tilte{
+  color: #5D7884;
+}
+.count_item_val{
+  color: red;
+}
+.count_line{
+  border-left: 1px solid #ffffff;
+  width: 1px;
+  height: 80rpx;
+  display: block;
+}
+
+.business_title{
+  margin-top: 30rpx;
+  color: #5D7884;
+}
+.business_item{
+  background: #ffffff;
+}

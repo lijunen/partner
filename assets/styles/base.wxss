@@ -1,0 +1,168 @@
+.ecs_default_button {
+  background: #87CEEA;
+  color: #fff;
+}
+
+.ecs_primary_button {
+  background: #0bb20c;
+  color: #fff;
+}
+
+.ecs_warn_button {
+  background: red;
+  color: #fff;
+}
+.yd_share_button{
+  background: #FF8C71;
+  color: #fff;
+  border-radius: 0;
+}
+
+.base_contanier {
+  margin: 20rpx;
+  background: #fff;
+}
+
+.ecs_sub_title {
+  color: #999;
+  font-size: 28rpx;
+}
+
+.flex_item_1 {
+  flex: 1;
+}
+
+.flex_item_2 {
+  flex: 2;
+}
+
+.flex_item_3 {
+  flex: 3;
+}
+
+.flex_item_4 {
+  flex: 4;
+}
+
+.flex_item_5 {
+  flex: 5;
+}
+
+.delimiter {
+  height: 20rpx;
+  background: #ededee;
+}
+
+.mask {
+  z-index: 3;
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background-color: black;
+  opacity: 0.5;
+}
+
+.ecs_toast_container {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  z-index: 3000;
+  transform: translate(-50%, -50%);
+  padding: 20rpx;
+  min-width: 200rpx;
+  /* max-width: 80%; */
+  background: #000;
+  background-color: black;
+  border-radius: 10rpx;
+  color: #fff;
+  opacity: 0.8;
+  text-align: center;
+}
+
+.check_user_dialog_class {
+  position: fixed;
+  z-index: 1000;
+  width: 80%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fafafc;
+  border-radius: 5px;
+  overflow: hidden;
+  padding: 30rpx;
+}
+
+.user_dialog_input {
+  height: 80rpx;
+  line-height: 80rpx;
+  border: 1px solid #ccc;
+  padding-left: 20rpx;
+}
+
+.user_dialog_button_area {
+  margin-top: 30rpx;
+}
+
+.weui-loadmore__tips {
+  color: #ccc;
+}
+
+.picker {
+  border: 1px solid #d9d9d9;
+  padding: 5rpx;
+  border-radius: 10rpx;
+}
+
+.tabbar {
+  z-index: 1000;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  left: 0px;
+  right: 0rpx;
+  position: fixed;
+  background-color: white;
+  bottom: 0rpx;
+ border-top: 1px solid #eeeeee;
+}
+
+.tabbar-item {
+  padding: 8rpx;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+}
+
+.tabbar-image {
+  width: 56rpx;
+  height: 56rpx;
+  margin-top: 8rpx
+}
+
+.tabbar-title {
+  font-size: 27rpx;
+  margin-top: 8rpx;
+}
+.tabbar-title-select {
+  font-size: 27rpx;
+  margin-top: 8rpx;
+  color: #1296db
+}
+
+.base_title{
+  color: #5D7884;
+}
+
+page{
+  background: #f2f3f5;
+}
+
+.no_data{
+  text-align: center;
+  color: #ccc;
+  margin-top: 60rpx;
+}

@@ -1,0 +1,5 @@
+/* pages/setting/notify/detail/detail.wxss */
+.footer{
+  text-align: right;
+  color: #ccc;
+}

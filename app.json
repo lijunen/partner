@@ -1,0 +1,67 @@
+{
+  "pages": [
+    "pages/index/home/home",
+    "pages/index/login/login",
+    "pages/index/auth/auth",
+    "pages/index/team/team",
+    "pages/index/switchcity/switchcity",
+    "pages/index/share_qrcode/share_qrcode",
+    "pages/share/index/index",
+    "pages/wallet/index/index",
+    "pages/wallet/take_cash/take_cash",
+    "pages/wallet/wallet_log/wallet_log",
+    "pages/wallet/income_top/income_top",
+    "pages/wallet/my_card/my_card",
+    "pages/index/agent_info/agent_info",
+    "pages/setting/index/index",
+    "pages/setting/password/password",
+    "pages/setting/agreement/agreement",
+    "pages/setting/help/list/help_list",
+    "pages/setting/help/detail/help_detail",
+    "pages/setting/contact/contact",
+    "pages/setting/notify/list/list",
+    "pages/setting/notify/detail/detail",
+    "pages/index/team/users/list",
+    "pages/index/auth/person/person_info",
+    "pages/index/auth/person/person_commit",
+    "pages/index/auth/card/card_info",
+    "pages/index/auth/card/card_commit"
+    
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#87CEEA",
+    "navigationBarTitleText": "e点合伙人",
+    "navigationBarTextStyle": "#ffffff",
+    "backgroundColor": "#eeeeee"
+  },
+  "tabBar": {
+    "selectedColor": "#77CBE0",
+    "list": [
+      {
+        "pagePath": "pages/index/home/home",
+        "text": "首页",
+        "iconPath": "assets/images/icon_tabbar.png",
+        "selectedIconPath": "assets/images/icon_tabbar.png"
+      },
+      {
+        "pagePath": "pages/share/index/index",
+        "text": "有礼",
+        "iconPath": "assets/images/icon_tabbar.png",
+        "selectedIconPath": "assets/images/icon_tabbar.png"
+      },
+      {
+        "pagePath": "pages/wallet/index/index",
+        "text": "钱包",
+        "iconPath": "assets/images/icon_tabbar.png",
+        "selectedIconPath": "assets/images/icon_tabbar.png"
+      },
+      {
+        "pagePath": "pages/setting/index/index",
+        "text": "设置",
+        "iconPath": "assets/images/icon_tabbar.png",
+        "selectedIconPath": "assets/images/icon_tabbar.png"
+      }
+    ]
+  }
+}

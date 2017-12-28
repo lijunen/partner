@@ -1,0 +1,11 @@
+<!--pages/setting/help/help.wxml-->
+<view class='weui-cells' style='margin-top:0' wx:if="{{list.length > 0}}">
+  <view class='weui-cell' bindtap='detail' id="{{item.id}}" wx:for="{{list}}" wx:key="*key">
+    <view class='weui-cell__bd'>{{item.title}}</view>
+    <view class='weui-cell__ft weui-cell__ft_in-access'></view>
+  </view>
+</view>
+
+<view class='no_data' wx:if="{{list.length == 0}}">
+  暂无数据
+</view>

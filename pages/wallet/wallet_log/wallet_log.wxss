@@ -1,0 +1,17 @@
+/* pages/wallet/wallet_log/wallet_log.wxss */
+.log_container{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.log_add{
+  color: red;
+}
+.log_redus{
+  color: green
+}
+.log_time{
+  text-align: right;
+  color: #5D7884;
+}

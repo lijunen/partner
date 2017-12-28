@@ -1,0 +1,6 @@
+<!--pages/setting/agreement/agreement.wxml-->
+<view class="weui-article">
+  <view class="weui-article__section">
+    <rich-text nodes="{{content}}"></rich-text>
+  </view>
+</view>

@@ -1,0 +1,13 @@
+<!--pages/setting/notify/detail/detail.wxml-->
+<view class="weui-article">
+  <view class="weui-article__h2" style='text-align:center;'>{{detail.title}}</view>
+  <view class="weui-article__section">
+    <view class="weui-article__section">
+      <rich-text nodes="{{detail.detail}}"></rich-text>
+    </view>
+    <!-- <view class='footer'>
+      <view>{{detail.atime}}</view>
+      <view>{{detail.author}}</view>
+    </view> -->
+  </view>
+</view>

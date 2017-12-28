@@ -1,0 +1,13 @@
+<!--components/user_info/user_info.wxml-->
+<view class="weui-cell" bindtap='agentInfo'>
+  <view class="weui-cell__hd">
+    <image src="{{userInfo.busType == 'D' ? '/assets/images/touxiangD.jpg' : '/assets/images/touxiangP.jpg'}}"  class='user_phonto'></image>
+  </view>
+  <view class="weui-cell__bd user_info">
+    <view class='user_title'>用户名称：{{userInfo.realName}}</view>
+    <view class='user_title'>用户手机：{{inputParams.phone}}</view>
+    <view class='user_title'>用户类型：{{userInfo.busType == 'D'?'金牌老板':'普通用户'}}</view>
+  </view>
+  <view class='weui-cell__ft weui-cell__ft_in-access'>
+  </view>
+</view>

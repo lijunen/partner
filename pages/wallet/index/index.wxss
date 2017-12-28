@@ -1,0 +1,41 @@
+/* pages/wallet/index/index.wxss */
+.wallet_bg{
+  background: #B862E9;
+}
+.wallet_lable{
+  text-align: center;
+  color: #ffffff;
+}
+.wallet_value{
+  color: #ffffff;
+  text-align: center;
+  font-size: 23px;
+  font-weight: bold;
+}
+.earnings_content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+	border-radius: 5px 5px 0 0;
+  padding: 20rpx;
+}
+.count_item{
+  text-align: center;
+}
+.count_item_tilte{
+  color: #ffffff;
+  font-size: 12px;
+}
+.count_value{
+  color: #ffffff;
+  font-size: 19px;
+}
+.wallet_icon{
+  width: 60rpx;
+  height: 60rpx;
+  margin-right: 20rpx;
+}
+.wallet_tips{
+  color: red;
+}

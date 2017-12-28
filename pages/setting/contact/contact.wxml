@@ -1,0 +1,13 @@
+<!--pages/setting/contact/contact.wxml-->
+
+<image src='../../../assets/images/login_img.jpg' style='width:100%'></image>
+<view class='container'>
+  <view class='tips'>
+    <view>售后客服：400-0471-366</view>
+    <view>服务时间：8:30~18:30</view>
+  </view>
+</view>
+<view class='footer'>
+  <view>内蒙古益点商贸有限责任公司</view>
+  <view>Copyright 2016-2017 All Rright Reserved</view>
+</view>

@@ -1,0 +1,7 @@
+<!--pages/wallet/my_card/my_card.wxml-->
+<view class='card_container' wx:for="{{list}}" wx:key="*key" wx:if="{{list.length > 0}}">
+  <view >{{item.bankName}}</view>
+  <view class='bank_card_type'>{{item.cardType}}</view>
+  <view class='bank_card_no'>{{item.cardNum}}</view>
+</view>
+

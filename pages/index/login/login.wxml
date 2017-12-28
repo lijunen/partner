@@ -1,0 +1,21 @@
+<!--pages/index/login/login.wxml-->
+<form bindsubmit='formSubmit'>
+  <image src='../../../assets/images/login_img.jpg' style='height:160px;width:100%;'></image>  
+<view class='weui-cells' style='margin-top:-10px;'>
+  <view class='weui-cell'>
+    <view class='weui-cell__hd'>手机号码：</view>
+    <view class='weui-cell__bd'>
+      <input type='number' name='phone' bindinput='bindInput' data-field='phone' placeholder='请输入手机号' maxlength='11' value=''></input>
+    </view>
+  </view>
+  <view class='weui-cell'>
+    <view class='weui-cell__hd'>登录密码：</view>
+    <view class='weui-cell__bd'>
+      <input type='password' name='password' bindinput='bindInput' data-field='password' placeholder='请输入登录密码' value=''></input>
+    </view>
+  </view>
+</view>
+<view class="weui-btn-area">
+  <button  disabled="{{disabled}}" loading="{{loading}}"  class="ecs_default_button" form-type="submit">{{buttonText}}</button>
+</view>
+</form>

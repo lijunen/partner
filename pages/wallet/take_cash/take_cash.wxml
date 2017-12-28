@@ -1,0 +1,58 @@
+<!--pages/wallet/take_cash/take_cash.wxml-->
+<form bindsubmit='formSubmit'>
+  <view>
+    <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" style='height:185px;' bindchange='changeCashType' >
+      <block wx:for="{{balanceList}}" wx:key="*key" >
+        <swiper-item>
+          <view class='cash_container'>
+            <view class="cash_title">{{item.name}}</view>
+            <view class='cash_content'>
+              <view>可提现金额</view>
+              <view class='cash_value'>{{item.ktx}}</view>
+              <view>余额 {{item.ye}}</view>
+              <view class='cash_pay_type'>结算方式 {{item.drawTime == 0 ? '秒结': '每月'+item.drawTime+'号结算上个月返现'}}</view>
+            </view>
+          </view>
+        </swiper-item>
+      </block>
+    </swiper>
+  </view>
+
+  <view class='weui-cells' style='margin-top:0'>
+    <view class='weui-cell' style='margin-top:0'>
+      <view class='weui-cell__hd'>提现金额：</view>
+      <view class='weui-cell__bd'>
+        <input type='number' name="money" bindinput='bindInput' value='{{money}}' placeholder='请输入4位以上数字'></input>
+      </view>
+    </view>
+  </view>
+
+  <view class="weui-cells__title">账户信息</view>
+  <view class='weui-cells' style='margin-top:0'>
+    <view class='weui-cell'>
+      <view class='weui-cell__hd'>收款姓名：</view>
+      <view class='weui-cell__bd'>
+        <input type='text' readonly="true" value='{{realName}}' placeholder='收款姓名'></input>
+      </view>
+    </view>
+    <view class='weui-cell'>
+      <view class='weui-cell__hd'>收款银行卡：</view>
+      <view class='weui-cell__bd'>
+        <input type='text' readonly="true" value='{{bankCardNo}}' placeholder='收款银行卡'></input>
+      </view>
+    </view>
+  </view>
+
+  <view class="weui-cells__title">注意事项</view>
+  <view class='weui-cells' style='margin-top:0'>
+    <view class='weui-cell'>
+      <view class='weui-cell__bd' style='color:red;font-size:13px;'>
+        每笔提现要扣除三元的手续费，单笔最大五万！
+      </view>
+    </view>
+  </view>
+
+  <view class="weui-btn-area">
+    <button disabled="{{disabled}}" loading="{{loading}}" class="ecs_warn_button" form-type="submit">{{buttonText}}</button>
+  </view>
+</form>

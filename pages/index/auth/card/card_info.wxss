@@ -1,0 +1,4 @@
+/* pages/index/auth/card/card_info.wxss */
+.sub_title{
+  color: #ccc;
+}

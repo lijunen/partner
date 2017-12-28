@@ -1,0 +1,6 @@
+/* pages/index/auth/card/card_commit.wxss */
+.tips{
+  margin: 20rpx;
+  font-size: 13px;
+  color: red;
+}

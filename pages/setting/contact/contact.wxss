@@ -1,0 +1,20 @@
+/* pages/setting/contact/contact.wxss */
+.footer{
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 40rpx;
+  text-align: center; 
+  font-size: 14px;
+  color: #5D7884;
+}
+.tips{
+  color: #859F60;
+  position: absolute;
+  margin-top: 130rpx;
+  margin-left: 23%;
+  width: 100%;
+}
+.container{
+  position: relative;
+}

@@ -1,0 +1,4 @@
+/* pages/setting/notify/list/list.wxss */
+.time_title{
+  color: #ccc;
+}

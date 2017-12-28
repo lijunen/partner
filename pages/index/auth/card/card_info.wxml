@@ -1,0 +1,24 @@
+<!--pages/index/auth/card/card_info.wxml-->
+
+<view class='weui-cells__title'>账号信息</view>
+<view class='weui-cells' style='margin-top:0'>
+  <view class='weui-cell'>
+    <view class='weui-cell__bd'>
+      <view>真实姓名</view>
+      <view class='sub_title'>{{user.realName}}</view>
+    </view>
+  </view>
+  <view class='weui-cell'>
+    <view class='weui-cell__bd'>
+      <view>收款账号</view>
+      <view class='sub_title'>{{user.cardNo}}</view>
+    </view>
+  </view>
+  <view class='weui-cell'>
+    <view class='weui-cell__bd'>
+      <view>所属银行</view>
+      <view class='sub_title'>{{user.bankNname}}</view>
+    </view>
+  </view>
+</view>
+

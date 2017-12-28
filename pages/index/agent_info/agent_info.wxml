@@ -1,0 +1,25 @@
+<!--pages/index/agent_info/agent_info.wxml-->
+<view class='weui-cells__title'>商户信息</view>
+<view class='weui-cells' style='margin-top:0'>
+  <view class='weui-cell'>
+    <view class='weui-cell__hd'>商户姓名</view>
+    <view class='weui-cell__bd info_title'>{{user.realName}}</view>
+  </view>
+</view>
+
+<view class='weui-cells__title'>收款信息</view>
+<view class='weui-cells' style='margin-top:0'>
+  <view class='weui-cell'>
+    <view class='weui-cell__hd'>收款姓名</view>
+    <view class='weui-cell__bd info_title'>{{user.realName}}</view>
+  </view>
+  <view class='weui-cell'>
+    <view class='weui-cell__hd'>收款账号</view>
+    <view class='weui-cell__bd info_title'>{{user.cardNo}}</view>
+  </view>
+  <view class='weui-cell'>
+    <view class='weui-cell__hd'>收款银行</view>
+    <view class='weui-cell__bd info_title'>{{user.bankNname}}</view>
+  </view>
+ 
+</view>

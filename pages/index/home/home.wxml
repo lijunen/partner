@@ -1,0 +1,40 @@
+<!--pages/index/home/home.wxml-->
+<!--pages/index/main/main.wxml-->
+<view class='user_bg'>
+  <component-user-info></component-user-info>
+  <view class='earnings_content'>
+    <view class='count_item'>
+      <view class='count_item_tilte'>今日收益</view>
+      <view class='count_item_val'>+{{wallet.cap}}</view>
+    </view>
+    <view class='count_line'></view>
+    <view class='count_item'>
+      <view class='count_item_tilte'>钱包余额</view>
+      <view class='count_item_val'>{{wallet.balance}}</view>
+    </view>
+
+  </view>
+
+</view>
+
+
+<swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+  <block wx:for="{{imgUrls}}" wx:key="*key">
+    <swiper-item>
+      <image src="{{item.url}}" class="slide-image"  style='width:100%;height:100%;max-width:100%;'/>
+    </swiper-item>
+  </block>
+</swiper>
+
+
+
+<view class="weui-grids">
+  <block wx:for="{{homeModel}}" wx:key="*key">
+    <navigator url="{{item.url}}" class="weui-grid business_item" hover-class="weui-grid_active">
+      <image class="weui-grid__icon" src="../../../assets/images/icon_tabbar.png" />
+      <view class="weui-grid__label business_title">{{item.name}}</view>
+    </navigator>
+  </block>
+
+</view>
+

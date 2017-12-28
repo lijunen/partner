@@ -1,0 +1,24 @@
+/* pages/wallet/take_cash/take_cash.wxss */
+.cash_container{
+  border: 1px solid #ccc;
+}
+.cash_title{
+  background: #ccc;
+  padding: 20rpx;
+}
+.cash_content{
+  padding:20rpx 0 40rpx 0;
+  text-align: center;
+}
+.cash_value{
+  color: red;
+  font-size: 25px;
+}
+.cash_pay_type{
+  color: #B5B5B5;
+}
+.tips_title{
+  padding: 10rpx 30rpx;
+  background: #f2f3f5;
+  margin: 10rpx;
+}

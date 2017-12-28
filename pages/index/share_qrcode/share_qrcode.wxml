@@ -1,0 +1,9 @@
+<!--pages/index/share_qrcode/share_qrcode.wxml-->
+<view class='qrcode_container'>
+  <image src='{{qrcode}}' class='qrcode'></image>
+
+   
+</view>
+<view class="weui-btn-area share_button">
+    <button class="ecs_default_button" bindtap='share' form-type="submit">分享我的二维码</button>
+  </view>

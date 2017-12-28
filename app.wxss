@@ -1,0 +1,4 @@
+/**app.wxss**/
+@import 'assets/styles/weui.wxss'
+@import 'assets/styles/base.wxss'
+

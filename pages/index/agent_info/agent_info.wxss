@@ -1,0 +1,5 @@
+/* pages/index/agent_info/agent_info.wxss */
+.info_title{
+  margin-left: 30rpx;
+  color: #AFAFAF;
+}

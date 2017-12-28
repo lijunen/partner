@@ -1,0 +1,49 @@
+<!--pages/wallet/income_top/income_top.wxml-->
+<view class='top_fixed_container'>
+  <view class='income_bg'>
+    <view class='phonto_container'>
+      <image src="{{userInfo.busType == 'D' ? '/assets/images/touxiangD.jpg' : '/assets/images/touxiangP.jpg'}}" class='user_phonto'></image>
+    </view>
+    <view class='earnings_content'>
+      <view class='count_item'>
+        <view class='count_value'>{{rank}}</view>
+        <view class='count_item_tilte'>当月排行</view>
+      </view>
+      <view class='count_item count_item_border'>
+        <view class='count_value'>{{userInfo.name}}</view>
+        <view class='count_item_tilte'>{{inputParams.phone}}</view>
+      </view>
+      <view class='count_item'>
+        <view class='count_value'>{{income}}</view>
+        <view class='count_item_tilte'>当月收益</view>
+      </view>
+    </view>
+  </view>
+  <view class='weui-cells' style='margin-top:0;background: #FE9458;'>
+    <view class='weui-cell'>
+      <view class='weui-cell__bd'>
+        <view class='top_container'>
+          <view class='top_name'>当月排行</view>
+          <view class='top_name'>姓名/电话</view>
+          <view class='top_name'>当月收益</view>
+        </view>
+      </view>
+    </view>
+  </view>
+
+</view>
+
+<scroll-view class='weui-cells data_container' wx:if="{{list.length >0}}">
+  <view class='weui-cell' wx:for="{{list}}" wx:key="*key">
+    <view class='weui-cell__bd'>
+      <view class='top_container'>
+        <view class='top_name'>{{item.rank}}</view>
+        <view class='top_name'>{{item.busName}}/{{item.phone}}</view>
+        <view class='top_income'>{{item.money}}</view>
+      </view>
+    </view>
+  </view>
+</scroll-view>
+<block wx:if="{{list.length == 0}}">
+  <view class="no_data">暂无数据</view>
+</block>

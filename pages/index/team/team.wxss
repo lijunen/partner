@@ -1,0 +1,6 @@
+/* pages/index/team/team.wxss */
+.team_icon{
+  width: 60rpx;
+  height: 60rpx;
+  margin-right: 25rpx;
+}

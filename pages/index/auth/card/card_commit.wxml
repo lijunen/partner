@@ -1,0 +1,44 @@
+<!--pages/index/auth/card/card_commit.wxml-->
+<form bindsubmit="formSubmit">
+  <view class='weui-cells__title'>收款账号认证</view>
+  <view class='weui-cells' style='margin-top:0'>
+    <view class='weui-cell'>
+      <view class='weui-cell__hd'>真实姓名：</view>
+      <view class='weui-cell__bd'>
+        <input type='text' name="realName" value='{{realName}}' placeholder='真实姓名' disabled='true'></input>
+      </view>
+    </view>
+    <view class='weui-cell'>
+      <view class='weui-cell__hd'>收款账号：</view>
+      <view class='weui-cell__bd'>
+        <input type='number' name="cardNumber" bindinput='bindInput' bindblur="checkCards" data-field="cardNumber" placeholder='请输入收款账号'></input>
+      </view>
+    </view>
+    <view class='weui-cell'>
+      <view class='weui-cell__hd'>所属银行：</view>
+      <view class='weui-cell__bd'>
+        <input type='text' name="bankName" value='{{bankName}}' placeholder='所属银行' disabled='true'></input>
+      </view>
+    </view>
+
+    <view class='weui-cell' >
+      <view class='weui-cell__hd'>开户城市：</view>
+      <view class='weui-cell__bd'>
+        <input type='text' name="city" bindtap='switchCity' value='{{bankCity}}' readonly="true" placeholder='请选择开户城市'></input>
+      </view>
+    </view>
+    <view class='weui-cell'>
+      <view class='weui-cell__hd'>银行预留手机号：</view>
+      <view class='weui-cell__bd'>
+        <input type='number' name="bankPreMobile" maxlength='11' value='' bindinput='bindInput' data-field="bankPreMobile" placeholder='请输入银行预留手机号码'></input>
+      </view>
+    </view>
+  </view>
+  <view class='tips'>
+    <view>温馨提示：</view>
+    <view>银行预留手机号必须为办理银行卡时所填写的手机号码！</view>
+  </view>
+  <view class="weui-btn-area">
+    <button disabled="{{disabled}}" loading="{{loading}}" class="ecs_default_button" form-type="submit">{{buttonText}}</button>
+  </view>
+</form>

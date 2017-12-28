@@ -1,0 +1,17 @@
+<!--pages/wallet/wallet_log/wallet_log.wxml-->
+
+<view class='weui-cells' style='margin-top:0' wx:if="{{list.length > 0}}">
+  <view class='weui-cell' wx:for="{{list}}" wx:key="*key">
+    <view class='weui-cell__bd'>
+      <view class='log_container'>
+        <view>{{item.storageType}}</view>
+        <view class='log_add'>{{item.money}}</view>
+      </view>
+      <view class='log_time'>{{item.createTime}}</view>
+    </view>
+  </view>
+</view>
+
+<block wx:if="{{list.length == 0}}">
+  <view class="no_data">暂无数据</view>
+</block>

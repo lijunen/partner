@@ -1,0 +1,12 @@
+<!--pages/index/team/users/list.wxml-->
+<view class='weui-cells' style='margin-top:0'>
+  <view class='weui-cell' wx:for="{{list}}" wx:key="*key">
+    <view class='weui-cell__bd'>
+      <view class='team_container'>
+        <view>{{item.name}}</view>
+        <view>{{item.phone}}</view>
+        <!-- <view>{{item.busType}}</view> -->
+      </view>
+    </view>
+  </view>
+</view>

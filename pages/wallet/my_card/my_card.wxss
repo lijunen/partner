@@ -1,0 +1,15 @@
+/* pages/wallet/my_card/my_card.wxss */
+.card_container{
+  background: #87CEEA;
+  margin: 20rpx;
+  padding: 20rpx;
+  color: #ffffff;
+  border-radius: 3px;
+}
+.bank_card_type{
+  font-size: 15px;
+}
+.bank_card_no{
+  font-size: 23px;
+  text-align: right;
+}

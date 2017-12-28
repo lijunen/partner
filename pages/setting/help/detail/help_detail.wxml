@@ -1,0 +1,9 @@
+<!--pages/setting/help/detail/help_detail.wxml-->
+<view class="weui-article">
+  <view class="weui-article__h1">{{detail.title}}</view>
+  <view class="weui-article__section">
+   
+   <rich-text nodes="{{detail.content}}"></rich-text>
+    
+  </view>
+</view>

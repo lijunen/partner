@@ -1,0 +1,24 @@
+/* pages/index/auth/auth.wxss */
+
+.auth_panel{
+  background: #ffffff;
+  padding: 30rpx;
+  margin: 15rpx;
+}
+.auth_photo{
+  width: 100%;
+  height: 320rpx;
+}
+.auth_tips{
+  text-align: center;
+}
+.auth_title{
+  font-size: 21px;
+  color: #5EB8D0;
+}
+.auth_status_yes{
+  color: #E8B23E;
+}
+.auth_status_no{
+  color: red;
+}

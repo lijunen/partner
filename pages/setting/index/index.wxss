@@ -1,0 +1,6 @@
+/* pages/setting/index/index.wxss */
+.icon{
+  width: 60rpx;
+  height: 60rpx;
+  margin-right: 20rpx;
+}
