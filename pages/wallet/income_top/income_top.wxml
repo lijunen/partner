@@ -10,7 +10,7 @@
         <view class='count_item_tilte'>当月排行</view>
       </view>
       <view class='count_item count_item_border'>
-        <view class='count_value'>{{userInfo.name}}</view>
+        <view class='count_value'>{{userInfo.realName}}</view>
         <view class='count_item_tilte'>{{inputParams.phone}}</view>
       </view>
       <view class='count_item'>
