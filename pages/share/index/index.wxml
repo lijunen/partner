@@ -31,7 +31,8 @@
     </view>
   </view>
 </view>
-<scroll-view class='weui-cells friend_data_container' scroll-y="true">
+
+<scroll-view class='weui-cells friend_data_container' scroll-y="true" style='margin-bottom:60px;'>
   <view class='weui-cell' wx:for="{{list}}" wx:key="*key" wx:if="{{list.length > 0}}">
     <view class='weui-cell__bd'>
       <view class='friend_container'>
@@ -40,14 +41,17 @@
       </view>
     </view>
   </view>
+  
+  <loading-more has_more_data="{{has_more_data}}"></loading-more>
   <view wx:if="{{list.length == 0}}" class='no_data' style='padding-bottom:60rpx;'>
     暂无收益
   </view>
+  
 </scroll-view>
 
 
-<view class='share_button_area'>
+ <view class='share_button_area'>
   <navigator url='../../index/share_qrcode/share_qrcode'>
     <button class='yd_share_button'>邀请好友</button>
   </navigator>
-</view>
+</view> 

@@ -11,7 +11,8 @@ Page({
     list:[],
     userInfo:{},
     inputParams: {},
-    page:1
+    page:1,
+    has_more_data: true
   },
 
   /**
@@ -114,7 +115,11 @@ Page({
       page:this.data.page
     }
     let that = this
-    app.HttpService.incomeRanking(params).then(data => {
+    let isShowLoading = true
+    if (this.data.page > 1) {
+      isShowLoading = false
+    }
+    app.HttpService.incomeRanking(params, isShowLoading).then(data => {
       if (data.status == 1) {
        data.data.map(item=>{
         that.data.list.push(item)
@@ -122,6 +127,10 @@ Page({
        that.setData({
          list:that.data.list
        })
+      } else {
+        that.setData({
+          has_more_data: false
+        })
       }
     })
   }

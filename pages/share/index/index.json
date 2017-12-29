@@ -2,6 +2,7 @@
   "navigationBarTitleText": "推荐有礼",
   "navigationBarBackgroundColor": "#FF8C71",
   "usingComponents": {
-    "component-user-info": "/components/user_info/user_info"
+    "component-user-info": "/components/user_info/user_info",
+    "loading-more":"/components/loading_more/loading_more"
   }
 }

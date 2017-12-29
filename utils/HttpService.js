@@ -187,10 +187,11 @@ class Service extends ServiceBase {
   /**
    * 收入统计
    */
-  incomeRanking(params){
+  incomeRanking(params,isLoading = true){
     return this.sendRequest({
       url: this.path.incomeRanking,
-      data: params
+      data: params,
+      showLoading:isLoading
     })
   }
 
@@ -237,10 +238,11 @@ class Service extends ServiceBase {
   /**
    * 好友
    */
-  getTeamList(params){
+  getTeamList(params,isLoading = true){
     return this.sendRequest({
       url: this.path.getTeamList,
-      data: params
+      data: params,
+      showLoading: isLoading
     })
   }
   /**

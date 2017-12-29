@@ -43,6 +43,7 @@
       </view>
     </view>
   </view>
+  <loading-more has_more_data="{{has_more_data}}"></loading-more>
 </scroll-view>
 <block wx:if="{{list.length == 0}}">
   <view class="no_data">暂无数据</view>

@@ -4,6 +4,7 @@ Page({
   data: {
     page:1,
     list:[],
+    has_more_data:true,
     count_info:{
       totalBelongMan:0,
       totalBelongMoney:0,
@@ -45,13 +46,21 @@ Page({
       page:this.data.page
     }
     let that = this
-    app.HttpService.getTeamList(params).then(data=>{
+    let isShowLoading = true
+    if(this.data.page > 1){
+      isShowLoading = false
+    }
+    app.HttpService.getTeamList(params, isShowLoading).then(data=>{
       if(data.status == 1){
         data.data.map(item=>{
           that.data.list.push(item)
         })
         that.setData({
           list:that.data.list
+        })
+      }else{
+        that.setData({
+          has_more_data:false
         })
       }
     })
