@@ -1,5 +1,4 @@
 <!--pages/index/home/home.wxml-->
-<!--pages/index/main/main.wxml-->
 <view class='user_bg'>
   <component-user-info></component-user-info>
   <view class='earnings_content'>
