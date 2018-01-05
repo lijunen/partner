@@ -17,7 +17,7 @@
   <navigator url='../take_cash/take_cash'>
     <view class='weui-cell'>
       <view class='weui-cell__hd'>
-        <image src='/assets/images/icon_tabbar.png' class='wallet_icon'></image>
+        <image src='/assets/images/woyaotixian.png' class='wallet_icon'></image>
       </view>
       <view class='weui-cell__bd'>
         我要提现
@@ -28,7 +28,7 @@
   <navigator url='../wallet_log/wallet_log'>
     <view class='weui-cell'>
       <view class='weui-cell__hd'>
-        <image src='/assets/images/icon_tabbar.png' class='wallet_icon'></image>
+        <image src='/assets/images/qianbao-dianji.png' class='wallet_icon'></image>
       </view>
       <view class='weui-cell__bd'>
         钱包明细
@@ -39,7 +39,7 @@
   <navigator url='../income_top/income_top'>
     <view class='weui-cell'>
       <view class='weui-cell__hd'>
-        <image src='/assets/images/icon_tabbar.png' class='wallet_icon'></image>
+        <image src='/assets/images/shouyipaihang.png' class='wallet_icon'></image>
       </view>
       <view class='weui-cell__bd'>收益排行</view>
       <view class='weui-cell__ft weui-cell__ft_in-access wallet_tips'></view>
@@ -48,7 +48,7 @@
   <navigator url='../my_card/my_card'>
     <view class='weui-cell'>
       <view class='weui-cell__hd'>
-        <image src='/assets/images/icon_tabbar.png' class='wallet_icon'></image>
+        <image src='/assets/images/wodeyinghangka.png' class='wallet_icon'></image>
       </view>
       <view class='weui-cell__bd'>我的银行卡</view>
       <view class='weui-cell__ft weui-cell__ft_in-access wallet_tips'>{{cardNumber}}张</view>

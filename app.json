@@ -41,26 +41,26 @@
       {
         "pagePath": "pages/index/home/home",
         "text": "首页",
-        "iconPath": "assets/images/icon_tabbar.png",
-        "selectedIconPath": "assets/images/icon_tabbar.png"
+        "iconPath": "assets/images/shouye-weidianji.png",
+        "selectedIconPath": "assets/images/shouye-dianji.png"
       },
       {
         "pagePath": "pages/share/index/index",
         "text": "有礼",
-        "iconPath": "assets/images/icon_tabbar.png",
-        "selectedIconPath": "assets/images/icon_tabbar.png"
+        "iconPath": "assets/images/youli-weidianji.png",
+        "selectedIconPath": "assets/images/youli-dianji.png"
       },
       {
         "pagePath": "pages/wallet/index/index",
         "text": "钱包",
-        "iconPath": "assets/images/icon_tabbar.png",
-        "selectedIconPath": "assets/images/icon_tabbar.png"
+        "iconPath": "assets/images/qianbao-weidianji.png",
+        "selectedIconPath": "assets/images/qianbao-dianji.png"
       },
       {
         "pagePath": "pages/setting/index/index",
         "text": "设置",
-        "iconPath": "assets/images/icon_tabbar.png",
-        "selectedIconPath": "assets/images/icon_tabbar.png"
+        "iconPath": "assets/images/shezhi-weidianji.png",
+        "selectedIconPath": "assets/images/shezhi-dianji.png"
       }
     ]
   }

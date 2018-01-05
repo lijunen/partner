@@ -117,12 +117,15 @@ Page({
         data.moduleData.map(item => {
           if (item.id == 2) {
             item.url = '../auth/auth'
+            item.icon = '/assets/images/shimingrenzheng.png'
           }
           if (item.id == 3) {
             item.url = '../team/team'
+            item.icon = '/assets/images/wodetuandui.png'
           }
           if (item.id == 4) {
             item.url = '../share_qrcode/share_qrcode'
+            item.icon = '/assets/images/wodetuiguangma.png'
           }
           models.push(item)
         })

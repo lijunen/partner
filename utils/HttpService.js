@@ -266,10 +266,11 @@ class Service extends ServiceBase {
   /**
    * 消息列表
    */
-  getSystemMessageList(params) {
+  getSystemMessageList(params, isLoading = true) {
     return this.sendRequest({
       url: this.path.getSystemMessageList,
-      data: params
+      data: params,
+      showLoading: isLoading
     })
   }
 

@@ -51,7 +51,8 @@ Page({
   onPullDownRefresh: function () {
     this.setData({
       page:1,
-      list:[]
+      list:[],
+      has_more_data: true
     })
   },
 
@@ -84,7 +85,11 @@ Page({
       page: this.data.page
     }
     let that = this
-    app.HttpService.getSystemMessageList(params).then(data=>{
+    let isShowLoading = true
+    if (this.data.page > 1) {
+      isShowLoading = false
+    }
+    app.HttpService.getSystemMessageList(params, isShowLoading).then(data=>{
       if(data.status == 1){
         data.data.map(item=>{
           that.data.list.push(item)
@@ -93,6 +98,10 @@ Page({
           list:that.data.list
         })
 
+      }else{
+        that.setData({
+          has_more_data: false
+        })
       }
     })
   }
