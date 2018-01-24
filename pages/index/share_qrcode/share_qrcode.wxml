@@ -1,9 +1,8 @@
 <!--pages/index/share_qrcode/share_qrcode.wxml-->
 <view class='qrcode_container'>
-  <image src='{{qrcode}}' class='qrcode'></image>
-
-   
+  <image src="{{qrcode_base64}}" binderror='imageError'  class='qrcode'></image>
+  
 </view>
 <view class="weui-btn-area share_button">
-    <button class="ecs_default_button" open-type='share'>分享我的二维码</button>
-  </view>
+  <button class="ecs_default_button" open-type='share'>分享我的二维码</button>
+</view>

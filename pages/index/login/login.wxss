@@ -1,1 +1,9 @@
 /* pages/index/login/login.wxss */
+.tips_container{
+  margin: 20rpx;
+  color: red;
+  font-size: 16px;
+}
+.tip_title{
+  padding: 8rpx 0;
+}

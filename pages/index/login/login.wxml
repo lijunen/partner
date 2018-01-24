@@ -18,4 +18,11 @@
 <view class="weui-btn-area">
   <button  disabled="{{disabled}}" loading="{{loading}}"  class="ecs_default_button" form-type="submit">{{buttonText}}</button>
 </view>
+
+<view class='tips_container'>
+  <view class=''>温馨提示：</view>
+  <view class='tip_title'>您是益点合伙人请直接登录</view>
+  <view class='tip_title'>如果不是请联系益点合伙人扫码注册</view>
+  
+</view>
 </form>

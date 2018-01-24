@@ -6,7 +6,8 @@ Page({
    * 页面的初始数据
    */
   data: {
-    qrcoce:''
+    qrcoce:'',
+    qrcode_base64:''
   },
 
   /**
@@ -77,17 +78,21 @@ Page({
     app.HttpService.qrcode(params).then(data=>{
       if(data.status == 1){
         that.setData({
-          qrcode:data.imgUrl
+          qrcode:data.imgUrl,
+          qrcode_base64:'data:image/jpg;base64,'+data.base64
         })
       }else{
         wx.showModal({
           title: '友情提示',
           content: '系统错误',
-          showCancel:true
+          showCancel:false
         })
       }
     })
    
+  },
+  imageError: function (e) {
+    console.log('image3发生error事件，携带值为', e.detail.errMsg)
   }
   
 
